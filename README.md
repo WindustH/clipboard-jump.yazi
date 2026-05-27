@@ -45,7 +45,7 @@ Add a keybinding to your `keymap.toml` to use the plugin:
 
 ```toml
 [[mgr.prepend_keymap]]
-on   = [ "g", "c" ]
+on   = [ "g", "p" ]
 run  = "plugin clipboard-jump"
 desc = "Jump to clipboard path"
 ```
