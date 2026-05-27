@@ -18,8 +18,8 @@
 ## 🚀 Features
 
 - **Instant jump:** Jump directly to any path stored in your system clipboard.
-- **Cross-platform clipboard:** Supports `wl-paste` (Wayland) and `xclip` (X11).
-- **Smart directory fallback:** If the clipboard contains a file path, jumps to its parent directory automatically.
+- **Built-in clipboard:** Uses Yazi's native `ya.clipboard()` API — no external tools required.
+- **Smart directory fallback:** If the clipboard contains a file path, jumps to its parent directory and selects the file automatically.
 - **Clear notifications:** Provides feedback on success or failure.
 
 ---
@@ -55,7 +55,7 @@ desc = "Jump to clipboard path"
 ## 🛠️ Usage
 
 1. Copy any file or directory path to your system clipboard (e.g., `Ctrl+Shift+C` in a file manager, or `pwd | wl-copy` in a terminal).
-2. Press the configured keybinding (e.g., `gc`) inside Yazi.
+2. Press the configured keybinding (e.g., `gp`) inside Yazi.
 3. Yazi will navigate to the directory:
    - If the clipboard contains a **directory path**, jumps directly to it.
-   - If the clipboard contains a **file path**, jumps to its parent directory.
+   - If the clipboard contains a **file path**, jumps to its parent directory and selects the file.
